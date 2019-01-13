@@ -2,7 +2,7 @@
 	<div id="box">
 		<div style="font-size: 24px;color: white;margin-bottom: 20px">用户打卡记录</div>
 		<ul>
-			<li v-for="item in clockInfoList">
+			<li v-for="(item,index) in clockInfoList" :key="index">
 				<div><span style="width: 80px;display: inline-block">{{item.userName}}</span><span style="margin-left: 20px">{{item.date}}</span>
 				</div>
 				<div style="color: white">{{item.address}}</div>

@@ -20,12 +20,14 @@ require('./mocks');
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false;
-Vue.prototype.pubData = pubData;   //挂载为全局变量
+Vue.prototype.pubData = pubData; //挂载为全局变量
 /* eslint-disable no-new */
 new Vue({
-	el: '#app',
-	router,
-	axios,
-	components: {App},
-	template: '<App/>'
+  el: '#app',
+  router,
+  axios,
+  components: {
+    App
+  },
+  template: '<App/>'
 });
